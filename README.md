@@ -1,6 +1,12 @@
-# Combining Natural Language Processing and Machine Learning to Identify Stress from Mental Health Conditions in Subreddit Posts
+# Identifying Stress from Mental Health Conditions in Subreddit Posts Using NLP and Machine Learning
 
-## Abstract
-Accurately diagnosing mental illness poses unique challenges relative to other chronic diseases. While objective tests exist for many medical conditions, mental health diagnoses rely heavily on qualitative observations. Moreover, factors such as systematic and structural challenges, healthcare provider variabilities, communication complexities, and patient factors further enhance diagnostic challenges. This study addresses the need for more objective means of examining the application of NLP in processing mental health-related data. Utilizing a dataset of subreddit posts, we employed NLP and machine learning techniques to detect linguistic markers of stress and mental health conditions. The study compared the efficacy of various word embedding methods—ELMo, BERT, and Bag of Words (BoW)—alongside three different machine learning models—Logistic Regression, SVM, and XGBoost—to classify text data. Our results indicate that BERT embeddings, particularly when used with Logistic Regression and SVM, significantly enhance the identification of stress indicators, potentially offering a more objective lens through which mental health can be assessed. This work suggests a promising direction for augmenting traditional diagnostic methods with automated text analysis tools, aiming to reduce subjectivity in mental health diagnoses and support healthcare professionals in their clinical assessments.
+## Why We Did This
+Mental health diagnoses often rely on subjective observation, varying across different providers and environments. This study explores whether Natural Language Processing (NLP) and Machine Learning (ML) techniques can provide a more objective approach to identifying stress indicators in mental health contexts by analyzing subreddit posts.
 
-Link to the final report: 
+## How We Did This
+Using a dataset of subreddit posts labeled as "stressed" or "not stressed," we applied three NLP word embedding techniques—ELMo, BERT, and Bag of Words (BoW)—combined with machine learning models (Logistic Regression, SVM, XGBoost) to classify the text. The pipeline included preprocessing, word embedding, model training, hyperparameter tuning, and evaluation with accuracy, recall, precision, and F1-score metrics.
+
+## What We Found
+The BERT embeddings, paired with Logistic Regression and SVM, demonstrated the highest accuracy and precision in identifying stress indicators. This suggests that transformer-based embeddings, especially when combined with linear models, enhance classification performance in mental health applications.
+
+[Link to the final report report](./)
